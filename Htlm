@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PlayStreaming Free - Plataforma para Streamers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 24px 0 16px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px #0004;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.3em;
+      letter-spacing: 1px;
+    }
+    header p {
+      color: #ccc;
+      margin: 8px 0 0 0;
+    }
+    .cta-btn {
+      background: #ea4335;
+      color: #fff;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 16px;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-btn:hover {
+      background: #ff675c;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      padding: 0 16px 32px 16px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 32px;
+    }
+    .stream-card {
+      background: #232323;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #0002;
+      overflow: hidden;
+      transition: transform 0.10s;
+      display: flex;
+      flex-direction: column;
+    }
+    .stream-card:hover {
+      transform: translateY(-6px) scale(1.015);
+      box-shadow: 0 8px 32px #0008;
+    }
+    .stream-thumb {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #111;
+    }
+    .stream-info {
+      padding: 16px;
+      flex: 1;
+    }
+    .stream-title {
+      font-size: 1.2em;
+      margin: 0 0 8px 0;
+    }
+    .stream-desc {
+      color: #bdbdbd;
+      font-size: 0.97em;
+      margin: 0 0 12px 0;
+    }
+    .video-embed {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 8px;
+      margin-top: 12px;
+      background: #000;
+    }
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.3em; }
+      .gallery { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PlayStreaming Free</h1>
+    <p>Tu plataforma para ver, emitir y descubrir a nuevos streamers.</p>
+    <a href="#" class="cta-btn">Quiero ser streamer</a>
+  </header>
+  <main>
+    <h2 style="text-align:center;">Streamers Destacados</h2>
+    <div class="gallery">
+      <!-- Streamer YouTube 1 -->
+      <div class="stream-card">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Miniatura Stream" class="stream-thumb">
+        <div class="stream-info">
+          <div class="stream-title">StreamerTech Live!</div>
+          <div class="stream-desc">Tecnología, gadgets y gaming en directo. ¡Únete al chat y participa!</div>
+          <iframe class="video-embed"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            allowfullscreen
+            title="StreamerTech Live"></iframe>
+        </div>
+      </div>
+      <!-- Streamer Twitch 1 -->
+      <div class="stream-card">
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/placeholder-profile-image-300x300.png" alt="Miniatura Twitch" class="stream-thumb">
+        <div class="stream-info">
+          <div class="stream-title">GamerQueen</div>
+          <div class="stream-desc">Acción, eSports y mucho humor en el canal más divertido de Twitch.</div>
+          <iframe class="video-embed"
+            src="https://player.twitch.tv/?channel=riotgames&parent=localhost&parent=github.io"
+            allowfullscreen
+            title="GamerQueen Twitch"></iframe>
+        </div>
+      </div>
+      <!-- Streamer YouTube 2 -->
+      <div class="stream-card">
+        <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg" alt="Miniatura Stream" class="stream-thumb">
+        <div class="stream-info">
+          <div class="stream-title">Música en Vivo 🎵</div>
+          <div class="stream-desc">Disfruta de las mejores sesiones musicales en directo, todos los días.</div>
+          <iframe class="video-embed"
+            src="https://www.youtube.com/embed/3JZ_D3ELwOQ" 
+            allowfullscreen
+            title="Música en Vivo"></iframe>
+        </div>
+      </div>
+      <!-- Streamer Twitch 2 -->
+      <div class="stream-card">
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/placeholder-profile-image-300x300.png" alt="Miniatura Twitch" class="stream-thumb">
+        <div class="stream-info">
+          <div class="stream-title">CreativeArt</div>
+          <div class="stream-desc">Arte digital, dibujo en vivo y tutoriales creativos. ¡No te lo pierdas!</div>
+          <iframe class="video-embed"
+            src="https://player.twitch.tv/?channel=artsy&parent=localhost&parent=github.io"
+            allowfullscreen
+            title="CreativeArt Twitch"></iframe>
+        </div>
+      </div>
+    </div>
+    <section style="text-align:center; margin-top:40px;">
+      <p>¿Eres streamer y quieres aparecer aquí? Muy pronto podrás crear tu canal y monetizar tu contenido.</p>
+      <a href="#" class="cta-btn">Próximamente: Regístrate como Streamer</a>
+    </section>
+  </main>
+  <footer style="text-align:center; color:#888; font-size:0.95em; padding:24px 8px;">
+    © 2025 PlayStreaming Free | Proyecto personal de plataforma streaming y comunidad de streamers.
+  </footer>
+</body>
+</html>
