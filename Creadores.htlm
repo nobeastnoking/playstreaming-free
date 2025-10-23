@@ -1,2 +1,26 @@
-<h1>Creadores</h1>
-<p>Espacio para perfiles, vídeos y comunidad de creadores.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Creadores - PlayStreaming</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Creadores Destacados</h1>
+<nav>
+<a href="index.html" class="btn">Inicio</a>
+<a href="live.html" class="btn">En Vivo</a>
+<a href="contacto.html" class="btn">Contacto</a>
+</nav>
+</header>
+
+<main>
+<p>Aquí puedes añadir perfiles de tus creadores favoritos con enlaces a sus vídeos o canales.</p>
+</main>
+
+<footer>
+<p>© 2025 PlayStreaming</p>
+</footer>
+</body>
+</html>
