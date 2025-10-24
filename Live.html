@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Transmisiones en Vivo - PlayStreaming</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayStreaming - En Vivo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Transmisiones en Vivo</h1>
-<nav>
-<a href="index.html" class="btn">Inicio</a>
-<a href="creadores.html" class="btn">Creadores</a>
-<a href="contacto.html" class="btn">Contacto</a>
-</nav>
-</header>
+  <header>
+    <h1>🔴 En Vivo</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="creadores.html">Creadores</a>
+      <a href="live.html">En Vivo</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-<main>
-<section>
-<h2>Directos Destacados</h2>
-<p>Aquí aparecerán las transmisiones en vivo de nuestros creadores.</p>
+  <main>
+    <h2>Transmisiones en directo destacadas</h2>
+    <p>Disfruta de los directos más vistos ahora mismo en PlayStreaming.</p>
 
-<!-- Ejemplo de vídeo embed de YouTube -->
-<div class="video">
-<iframe width="300" height="170" src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
-</div>
+    <div class="videos">
 
-</section>
-</main>
+      <!-- Transmisión 1 - YouTube -->
+      <div class="video">
+        <h3>🎮 Directo de GamerZone</h3>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/live_stream?channel=UC4R8DWoMoI7CAwX8_LjQHig"
+          title="GamerZone Live"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
 
-<footer>
-<p>© 2025 PlayStreaming</p>
-</footer>
+      <!-- Transmisión 2 - Twitch -->
+      <div class="video">
+        <h3>🎧 Directo de MusicBeat (Twitch)</h3>
+        <iframe
+          src="https://player.twitch.tv/?channel=monstercat&parent=nobeastnoking.github.io"
+          height="315"
+          width="560"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Transmisión 3 - YouTube -->
+      <div class="video">
+        <h3>💬 TalkShow360 - En directo</h3>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/live_stream?channel=UC29ju8bIPH5as8OGnQzwJyA"
+          title="TalkShow360 Live"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+    <a class="btn" href="index.html">← Volver al inicio</a>
+  </main>
+
+  <footer>
+    © 2025 PlayStreaming
+  </footer>
 </body>
 </html>
