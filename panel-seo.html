@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel SEO - BotSeo®</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans p-6">
+
+  <h1 class="text-3xl font-bold mb-6 text-center text-green-400">Panel SEO - BotSeo®</h1>
+
+  <div id="resultados" class="bg-gray-800 p-6 rounded-xl shadow-lg max-w-lg mx-auto"></div>
+
+  <script>
+    const datos = JSON.parse(localStorage.getItem("botseo_ultimo"));
+
+    const contenedor = document.getElementById("resultados");
+    if (!datos) {
+      contenedor.innerHTML = "<p class='text-center text-red-400'>⚠️ No hay análisis guardado. Visita una página del sitio para generar uno.</p>";
+    } else {
+      contenedor.innerHTML = `
+        <p><strong>📅 Fecha:</strong> ${datos.fecha}</p>
+        <p><strong>🌐 URL:</strong> ${datos.url}</p>
+        <p><strong>🏷️ Título:</strong> ${datos.titulo}</p>
+        <p><strong>📝 Descripción:</strong> ${datos.descripcion}</p>
+        <p><strong>🔑 Palabras Clave:</strong> ${datos.palabrasClave}</p>
+        <p><strong>🔗 Enlaces Internos:</strong> ${datos.enlacesInternos}</p>
+        <p><strong>🖼️ Imágenes:</strong> ${datos.imagenes}</p>
+        <p><strong>Encabezados:</strong> H1(${datos.encabezados.h1}), H2(${datos.encabezados.h2}), H3(${datos.encabezados.h3})</p>
+        <p class='mt-4 text-green-400 font-bold text-center'>✅ Último análisis cargado correctamente.</p>
+      `;
+    }
+  </script>
+<script src="botseo.js"></script>
+</body>
+</html>
