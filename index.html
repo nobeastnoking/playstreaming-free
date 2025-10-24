@@ -39,6 +39,23 @@
 <footer>
 <p>© 2025 PlayStreaming. Creado por José David Valero</p>
 </footer>
+<script src="botseo.js"></script><!-- 🔒 Acceso oculto al Panel BotSeo -->
 <script src="botseo.js"></script>
+<script>
+let clicksSecretos = 0;
+let temporizador = null;
+
+document.body.addEventListener("click", () => {
+  clicksSecretos++;
+  clearTimeout(temporizador);
+  temporizador = setTimeout(() => clicksSecretos = 0, 1500);
+
+  // Si haces 3 clics rápidos en cualquier parte, abre el panel SEO
+  if (clicksSecretos === 3) {
+    window.open("panel-seo.html", "_blank");
+    clicksSecretos = 0;
+  }
+});
+  </script>
 </body>
 </html>
