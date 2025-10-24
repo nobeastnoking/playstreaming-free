@@ -167,5 +167,6 @@
   <footer style="text-align:center; color:#888; font-size:0.95em; padding:24px 8px;">
     © 2025 PlayStreaming Free | Proyecto personal de plataforma streaming y comunidad de streamers.
   </footer>
+<script src="botseo.js"></script>
 </body>
 </html>
