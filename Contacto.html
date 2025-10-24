@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Contacto - PlayStreaming</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayStreaming - Contacto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Contacto</h1>
-<nav>
-<a href="index.html" class="btn">Inicio</a>
-<a href="creadores.html" class="btn">Creadores</a>
-<a href="live.html" class="btn">En Vivo</a>
-</nav>
-</header>
+  <header>
+    <h1>📩 Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="creadores.html">Creadores</a>
+      <a href="live.html">En Vivo</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-<main>
-<p>📧 Correo: contacto@playstreaming.com</p>
-<p>💬 También puedes contactarnos en redes sociales.</p>
-</main>
+  <main>
+    <h2>Envíanos un mensaje</h2>
+    <p>Si tienes dudas, propuestas o quieres unirte como creador, contáctanos directamente.</p>
 
-<footer>
-<p>© 2025 PlayStreaming</p>
-</footer>
+    <form action="mailto:playstreaming@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit" class="btn">Enviar Mensaje</button>
+    </form>
+
+    <div class="info">
+      <p>📧 <strong>Correo:</strong> playstreaming@gmail.com</p>
+      <p>🌐 <strong>Web:</strong> <a href="https://nobeastnoking.github.io/playstreaming-free/" target="_blank">PlayStreaming Oficial</a></p>
+    </div>
+
+    <a class="btn" href="index.html">← Volver al inicio</a>
+  </main>
+
+  <footer>
+    © 2025 PlayStreaming
+  </footer>
 </body>
 </html>
