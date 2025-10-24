@@ -1,11 +1,10 @@
 /* =========================================================
-   🤖 BotSeo® v1.0 - Analizador SEO interno para PlayStreaming
+   🤖 BotSeo® v2.0 - Analizador SEO con panel visual
    Creado por José David Valero Fernández
    ========================================================= */
 
-console.log("🚀 BotSeo® iniciado - Analizando SEO de PlayStreaming...");
+console.log("🚀 BotSeo® v2.0 iniciado - Analizando SEO de PlayStreaming...");
 
-// --- Función principal ---
 function analizarSEO() {
   const info = {
     titulo: document.title,
@@ -18,26 +17,25 @@ function analizarSEO() {
       h2: document.querySelectorAll("h2").length,
       h3: document.querySelectorAll("h3").length
     },
+    url: window.location.href,
+    fecha: new Date().toLocaleString()
   };
 
-  console.log("🧠 Resultados SEO:");
-  console.table(info);
+  // Guardar resultados en localStorage
+  localStorage.setItem("botseo_ultimo", JSON.stringify(info));
+  console.log("🧠 Resultados SEO guardados localmente:", info);
 
-  // --- Sugerencias básicas ---
+  // Sugerencias
   if (info.titulo.length < 10 || info.titulo.length > 60)
     console.warn("⚠️ El título debería tener entre 10 y 60 caracteres.");
-
   if (info.descripcion === "Sin descripción")
     console.warn("⚠️ Agrega una meta descripción para mejorar el SEO.");
-
   if (info.enlacesInternos < 3)
     console.warn("⚠️ Añade más enlaces internos entre tus páginas.");
-
   if (info.imagenes === 0)
-    console.warn("⚠️ No hay imágenes con etiquetas ALT, esto afecta al SEO visual.");
+    console.warn("⚠️ No hay imágenes con etiquetas ALT.");
 
   console.log("✅ Análisis completado por BotSeo®.");
 }
 
-// Ejecutar al cargar la página
 window.addEventListener("load", analizarSEO);
