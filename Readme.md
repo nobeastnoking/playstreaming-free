@@ -29,3 +29,42 @@ El objetivo es crear una base escalable que permita en el futuro integrar:
 ---
 
 ## 🧩 Estructura del proyecto
++------------------------------------------------------+
+|                     HEADER                           |
+|  🎬 PlayStreaming                                    |
+|  "Tu plataforma gratuita para creadores y transmisiones" |
+|  [Inicio] [Creadores] [En Vivo] [Contacto]          |
++------------------------------------------------------+
+
+|                        MAIN                          |
+|  HERO SECTION                                        |
+|  -------------------                                 |
+|  Bienvenido a PlayStreaming                          |
+|  Explora transmisiones en vivo, descubre creadores  |
+|  [Ver Transmisiones en Vivo] → live.html            |
+|                                                      |
+|  FEATURES SECTION                                    |
+|  ----------------                                 |
+|  - Streaming gratuito                                |
+|  - Creadores destacados                              |
+|  - Navegación móvil/PC                               |
+|  - Próximamente: panel de creadores                 |
++------------------------------------------------------+
+
+|                    SECCIONES SECUNDARIAS            |
+|  1) Creadores → creadores.html                      |
+|     - Cada creador: imagen + nombre + descripción   |
+|     - Botón "Ver vídeos" → canal de YouTube         |
+|                                                      |
+|  2) En Vivo → live.html                              |
+|     - Embeds de directos de YouTube                 |
+|     - Botón de regreso a Inicio o Creadores         |
+|                                                      |
+|  3) Contacto → contacto.html                         |
+|     - Correo electrónico                             |
+|     - Formulario simple para enviar mensajes         |
++------------------------------------------------------+
+
+|                        FOOTER                        |
+|  © 2025 PlayStreaming. Creado por José David Valero |
++------------------------------------------------------+
